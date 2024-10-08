@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Productos {
+            constructor(name,categories,units,price) {
+                this.name = name;
+                this.categories = categories;
+                this.units = units;
+                this.price = price;
+            }
+            total(){
+                return this.units * this.price;
+            }
+            getInfo(){
+                return `${this.name} (${this.categories}):${this.units} uds x ${this.price} `
+            }
+        }
+        const producto1 = new Productos("")
+
+
+
+
+
+    </script>
+</body>
+</html>
